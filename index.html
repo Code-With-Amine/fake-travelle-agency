@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Amiri&family=Cairo&family=El+Messiri:wght@500&family=Lato:wght@300;400&family=Pacifico&family=Permanent+Marker&family=Sono:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d83f7e2869.js" crossorigin="anonymous"></script>    
+<title>Cheers Mate</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: 'Sono', sans-serif;
+            background-color:rgba(180, 180, 239, 0.82);
+        }
+        #main{
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+        }
+        #logo{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 6);
+            position: relative;
+        }
+        #eye1,#eye2{
+            width: 1rem;
+            height: .5rem;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #eye1{
+            position: absolute;
+            top: 25%;
+            right: 15%;
+        }
+        #eye2{
+            position: absolute;
+            top: 25%;
+            left: 15%;
+        }
+        #smillyMouth{
+            position: absolute;
+            bottom: 32%;
+            width: 50%;
+            height: .5rem;
+            border: 1vw solid transparent;
+            border-bottom: .5rem solid red;
+            border-radius: 80%;
+            transform: translate(50%,50%);            
+        }
+        #noise{
+            background-color: black;
+
+        }
+        #pupil{
+            position: absolute;
+            left: .4rem;
+            width: .2rem;
+            height: .3rem;
+            background-color: black;
+        }
+        #Title{
+            position: absolute;
+            bottom: -82px;
+            color: rgb(0, 64, 255);
+            font-weight: bolder;
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+        }
+        .continer{
+            background-color: whitesmoke;
+            padding: 22px;
+            margin-top: 83px;
+            margin-left: 32px;
+        }
+        .rounded{
+            border-radius: 22px;
+        }
+        .receiver{
+            font-weight: bold;
+        }
+        .scheduled-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text{
+            text-align: center;
+            color: rgb(236, 100, 100);
+            margin: 8px;
+        }
+        .buttom{
+            padding: 12px 25px;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            background-color: red;
+            font-size: 1rem;
+            border-radius: 5%;
+        }
+        .contact > div {
+            margin: 22px;
+        }
+        div > ul {
+            list-style: circle;
+            margin-left: 22px;
+        }
+        .fa{
+            font-size: 3rem;
+            margin: 22px;
+            color: red;
+        }
+        .fa ~p{
+            color: red;
+            font-size: bold;
+        }
+        .continer2{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(1fr,1fr));
+            width: 100%;
+        }
+        .continer2 > div {
+            margin: 0;
+            padding: 22px;
+            color: white;
+            background-color: blue;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .bookNow{
+            color: blue;
+            background-color: aliceblue;
+            padding: 12px 22px;
+            border-radius: 55px;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .LearnMore{
+            text-transform: uppercase;
+            color: whitesmoke;
+            background-color: blue;
+            padding: 12px 22px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 55px;
+            cursor: pointer;
+        }
+        .child1{
+            background-color: aliceblue;
+            padding: 33px;
+        }
+        .conatiner3{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(1fr,1fr));
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 400px){
+            .scheduled-container{
+                    flex-direction: column;
+            }
+            .contact{
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="logo">
+            <span id="eye1"><span id="pupil"></span></span>
+            <span id="eye2"><span id="pupil"></span></span>
+            <div id="noise"></div>
+            <div id="smillyMouth"></div>
+            <div id="Title">Cheers Mate</div>
+        </div>
+        <div class="continer rounded">
+            <h1 style="color: rgba(64, 64, 210, 0.763);font-family: 'Cairo', sans-serif;">Appointment Confirmation</h1>
+            <p class="receiver">Dear[First name] [Last name],</p>
+            <p>we have successfully found the group that will accompany you on your journey check up appointment for:</p>
+            <div class="scheduled-container">
+                <div>
+                    <div class="text">
+                        Tuseday,April 5th at 8:30am
+                    </div>
+                    <div class="buttom">
+                        add to calendear
+                    </div>
+                </div>
+                <div>
+                    <p>Please remember to bring</p>
+                    <ul>
+                        <li>Insurance card and ID</li>
+                        <li>Mask</li>
+                        <li>Payment method </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <i class="fa-solid fa-phone fa"></i> 
+                <p>Call the partice</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope fa"></i>  
+                <p>Email reception</p>    
+             </div>
+             <div>
+                <i class="fa-regular fa-clock fa"></i>
+                <p>Opening hours</p>
+             </div>
+    </div>
+    <div class="continer2 rounded">
+            <img src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/16:9/w_2123,h_1194,c_limit/phonepicutres-TA.jpg" alt="">
+            <div>
+                <h2>30% OFF FLIGHTS TICKETS AND TRANSPORTS</h2>
+                <p style="text-align: justify;">Powder gingerbread cupcake macaroon wafer pie oat cake halvah. Chocolate chupa chups lollipop bonbon candy canes. Pie chocolate shortbread lollipop pudding sugar plum gummi bears halvah. Jelly-o topping pie toffee marshmallow tart powder.</p>
+            <div class="bookNow">BOOK NOW</div>
+            </div>
+    </div>
+    <div class="conatiner3 rounded">
+       <div class="child1">
+        <h2 style="color: blue;">
+            RATED #1 IN THE CITY
+        </h2>
+        <p style="text-align: justify;">Powder gingerbread cupcake macaroon wafer pie oat cake halvah. Chocolate chupa chups lollipop bonbon candy canes. Pie chocolate shortbread lollipop pudding sugar plum gummi bears halvah. Jelly-o topping pie toffee marshmallow tart powder.</p>
+        <div class="LearnMore">Learn more</div>
+    </div>
+        <img src="http://cdn.shopify.com/s/files/1/0842/3095/products/NicePebbleJR_grande.jpg?v=1604241040" alt="" style="width: 100%;">
+    </div>
+    </div>
+</body>
+</html>
